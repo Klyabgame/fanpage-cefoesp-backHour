@@ -11,7 +11,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     rootPath: join(__dirname,'..','public'),
     exclude:['/api*']
   }),
-  MongooseModule.forRoot('mongodb://localhost:27017/back-fanpage-cefoesp'),
+  MongooseModule.forRoot('mongodb://localhost:27018/back-fanpage-cefoesp'),
   FanpageModule
 
 ],
