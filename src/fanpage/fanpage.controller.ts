@@ -12,13 +12,13 @@ export class FanpageController {
 
     //basic
     @Get('/basic')
-    getAllCars(){
-        return 'holamundo'
+    getCourseBasic(){
+        return this.fanpageService.getCourseBasic();
     }
 
-    @Get('/basic/:id')
-    getCarsById(@Param('id') id){
-        
+    @Get('/perfec')
+    getCoursePerfec(){
+        return this.fanpageService.getCoursePerfec();
     }
 
     @Post('/basic')
