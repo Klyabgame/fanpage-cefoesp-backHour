@@ -17,6 +17,9 @@ export class FanpageService {
         private readonly coursePerfecEntity:Model<FanpagePerfecEntity>
     ){}
 
+    async getCourseBasic(){
+        return await this.courseBasicEntity.findAll();
+    }
 
     async createCourseBasic(createFanpageBasicoDto:CreateFanpageBasicoDto){
 
@@ -26,6 +29,10 @@ export class FanpageService {
 
         return c_basic;
 
+    }
+
+    async getCoursePerfec(){
+        return await this.coursePerfecEntity.findAll();
     }
 
 
